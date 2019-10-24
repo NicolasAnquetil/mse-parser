@@ -1,0 +1,209 @@
+( 
+        (FAMIX.Package (id: 0)
+            (name 'BaseInterface')) 
+          
+        (FAMIX.Package (id: 1)
+            (name 'TopInterface')) 
+          
+        (FAMIX.Package (id: 2)
+            (name 'DemoInterface')
+            (parentPackage (ref: 0))
+            (parentPackage (ref: 1))) 
+          
+        (FAMIX.Namespace (id:4)
+            (name 'essential\root') )
+         
+        (FAMIX.Method
+            (name '__construct')
+            (signature '__construct()')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Method
+            (name 'incrementVarTwo')
+            (signature 'incrementVarTwo()')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Method
+            (name 'fnct')
+            (signature 'fnct()')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Method
+            (name 'baseFunct')
+            (signature 'baseFunct()')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Method
+            (name 'topFunct')
+            (signature 'topFunct()')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Method
+            (name 'sayHello')
+            (signature 'sayHello()')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Package (id: 5)
+            (name 'ProjectInterface')) 
+          
+        (FAMIX.Attribute 
+            (name 'foo')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Attribute 
+            (name 'varOne')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Attribute 
+            (name 'varTwo')
+            (parentType (ref: 3)))
+         
+        (FAMIX.Class (id: 3)
+            (name 'essential\root\FirstClass') 
+            (container (ref: 4))
+            (parentPackage (ref: 2))
+            (parentPackage (ref: 1))
+            (parentPackage (ref: 0))
+            (parentPackage (ref: 5)))
+         
+        (FAMIX.Namespace (id:7)
+            (name 'essential\mySecondProject') )
+         
+        (FAMIX.Method
+            (name 'setSecondClassVar')
+            (signature 'setSecondClassVar()')
+            (parentType (ref: 6)))
+         
+        (FAMIX.Attribute 
+            (name 'secondClassVar')
+            (parentType (ref: 6)))
+         
+        (FAMIX.Class (id: 6)
+            (name 'essential\mySecondProject\SecondClass') 
+            (container (ref: 7)))
+         
+        (FAMIX.Namespace (id:9)
+            (name 'source\folderone') )
+         
+        (FAMIX.Method
+            (name '__construct')
+            (signature '__construct()')
+            (parentType (ref: 8)))
+         
+        (FAMIX.Method
+            (name 'defineA')
+            (signature 'defineA()')
+            (parentType (ref: 8)))
+         
+        (FAMIX.Attribute 
+            (name 'vara_private')
+            (parentType (ref: 8)))
+         
+        (FAMIX.Attribute 
+            (name 'vara_public')
+            (parentType (ref: 8)))
+         
+        (FAMIX.Attribute 
+            (name 'vara_protected')
+            (parentType (ref: 8)))
+         
+        (FAMIX.Class (id: 8)
+            (name 'source\folderone\ClassA') 
+            (container (ref: 9)))
+         
+        (FAMIX.Method
+            (name '__construct')
+            (signature '__construct()')
+            (parentType (ref: 10)))
+         
+        (FAMIX.Method
+            (name 'defineSubA')
+            (signature 'defineSubA()')
+            (parentType (ref: 10)))
+         
+        (FAMIX.Method
+            (name 'defineA')
+            (signature 'defineA()')
+            (parentType (ref: 10)))
+         
+        (FAMIX.Attribute 
+            (name 'vara_public')
+            (parentType (ref: 10)))
+         
+        (FAMIX.Attribute 
+            (name 'vara_protected')
+            (parentType (ref: 10)))
+         
+        (FAMIX.Class (id: 10)
+            (name 'source\folderone\ClassSubA') 
+            (container (ref: 9)))
+         
+        (FAMIX.Method
+            (name '__construct')
+            (signature '__construct()')
+            (parentType (ref: 11)))
+         
+        (FAMIX.Method
+            (name 'defineB')
+            (signature 'defineB()')
+            (parentType (ref: 11)))
+         
+        (FAMIX.Attribute 
+            (name 'varb_private')
+            (parentType (ref: 11)))
+         
+        (FAMIX.Class (id: 11)
+            (name 'source\folderone\ClassB') 
+            (container (ref: 9)))
+         
+        (FAMIX.Method
+            (name '__construct')
+            (signature '__construct()')
+            (parentType (ref: 12)))
+         
+        (FAMIX.Method
+            (name 'defineC')
+            (signature 'defineC()')
+            (parentType (ref: 12)))
+         
+        (FAMIX.Attribute 
+            (name 'varc_private')
+            (parentType (ref: 12)))
+         
+        (FAMIX.Class (id: 12)
+            (name 'source\folderone\ClassC') 
+            (container (ref: 9)))
+         
+        (FAMIX.Namespace (id:14)
+            (name 'source\foldertwo') )
+         
+        (FAMIX.Method
+            (name '__construct')
+            (signature '__construct()')
+            (parentType (ref: 13)))
+         
+        (FAMIX.Method
+            (name 'defineD')
+            (signature 'defineD()')
+            (parentType (ref: 13)))
+         
+        (FAMIX.Attribute 
+            (name 'vard_private')
+            (parentType (ref: 13)))
+         
+        (FAMIX.Attribute 
+            (name 'vard_public')
+            (parentType (ref: 13)))
+         
+        (FAMIX.Attribute 
+            (name 'vard_protected')
+            (parentType (ref: 13)))
+         
+        (FAMIX.Class (id: 13)
+            (name 'source\foldertwo\ClassD') 
+            (container (ref: 14)))
+         
+        (FAMIX.Inheritance
+            (subclass (ref: 10))
+            (superclass (ref: 8)))
+        )

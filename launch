@@ -1,0 +1,8 @@
+#!/bin/bash
+clear
+echo -e '———————Start———————'
+p=`which php`
+dir=${0%/*}
+t=`$p $dir/parser/parse.php`
+echo -e "$t"
+echo -e '———————End———————'
